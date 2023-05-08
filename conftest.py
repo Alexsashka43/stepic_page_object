@@ -11,6 +11,7 @@ def pytest_addoption(parser):
     parser.addoption('--language', action='store', default="en",
                      help="Choose language")
 
+
 @pytest.fixture(scope="function")
 def browser(request):
     browser_name = request.config.getoption("browser")
@@ -35,6 +36,7 @@ def browser(request):
     yield browser
     print("\nquit browser..")
     browser.quit()
+
 
 @pytest.fixture(scope="function")
 def language(request):

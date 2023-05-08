@@ -1,7 +1,2 @@
-allure-pytest
-jsonref
-jsonschema
-requests
 pytest
-pytest-xdist
-pytest-order
+selenium
